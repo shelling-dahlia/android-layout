@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/text1"
+        app:layout_constraintTop_toBottomOf="@id/text1"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/text2"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/text3"
+        app:layout_constraintTop_toBottomOf="@id/text3"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/text8"
+        app:layout_constraintTop_toBottomOf="@id/text8"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/text5"
+        app:layout_constraintTop_toBottomOf="@id/text5"/>
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/text6"
+        app:layout_constraintTop_toBottomOf="@id/text6"/>
+
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/text3"
+        app:layout_constraintTop_toBottomOf="@id/text3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
